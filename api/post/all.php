@@ -4,7 +4,8 @@
 
 // Dozvola pristupa svima, bez ogranicenja i tokena
 header("Access-Control-Allow-Origin: *"); 
-// Vraca kao JSON
+
+// Vraca kao JSON / Bez ovog zaglavlja php vraca Header Content-Type:text/html;charset=UTF-8 bez obzira sto je json_encode
 header("Content-Type: application/json"); 
 
 require_once "../../config/Database.php";
